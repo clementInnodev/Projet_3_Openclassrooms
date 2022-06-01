@@ -2,12 +2,23 @@
     background-color: white;
     margin: 0 0 20px 0;
     height: 250px;
-    border-radius: 20px;
+    border-radius: 12px;
+    position: relative;
+    &-alert{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: $color-alert;
+        padding: 5px 10px 5px 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: darken($color: $color-alert, $amount: 50%);
+    }
     &-img{
         object-fit: cover;
         height: 70%;
         width: 100%;
-        border-radius: 20px 20px 0 0;
+        border-radius: 12px 12px 0 0;
     }
     &-content{
         height: 30%;
