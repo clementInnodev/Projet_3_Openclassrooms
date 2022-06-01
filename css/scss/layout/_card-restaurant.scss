@@ -1,9 +1,15 @@
 .restaurant-card{
+    display: block;
+    text-decoration: none;
     background-color: white;
     margin: 0 0 20px 0;
     height: 250px;
     border-radius: 12px;
     position: relative;
+    color: black;
+    &:visited{
+        color: inherit;
+    }
     &-alert{
         position: absolute;
         top: 10px;
@@ -34,9 +40,11 @@
         flex-direction: column;
         justify-content: center;
         &-title{
+            font-size: 1rem;
             margin: 0 0 5px 0;
         }
         &-loc{
+            font-size: 0.9rem;
             margin: 0;
         }
     }
