@@ -8,8 +8,15 @@
     border-radius: 20px;
     position: relative;
     @include shadow;
+    cursor: pointer;
     &:nth-child(4){
         margin: 0 0 50px 0;
+    }
+    &:hover{
+        background-color: lighten($color: $color-primary, $amount: 35%);
+        .guide-card-icone{
+            color: $color-primary;
+        }
     }
     &-title{
         font-size: 1rem;

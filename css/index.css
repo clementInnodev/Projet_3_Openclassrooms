@@ -31,10 +31,19 @@ body {
   position: relative;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
 }
 
 .guide-card:nth-child(4) {
   margin: 0 0 50px 0;
+}
+
+.guide-card:hover {
+  background-color: #f2eafb;
+}
+
+.guide-card:hover .guide-card-icone {
+  color: #9356DC;
 }
 
 .guide-card-title {
