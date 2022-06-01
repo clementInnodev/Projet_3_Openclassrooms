@@ -1,0 +1,21 @@
+.menu-card{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    padding: 0 15px 0 15px;
+    border-radius: 12px;
+    &-content{
+        width: 80%;
+    }
+    &-title{
+        margin: 10px 0 5px 0;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    &-desc{
+        margin: 0 0 10px 0;
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+}
