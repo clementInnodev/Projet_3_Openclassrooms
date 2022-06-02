@@ -1,0 +1,9 @@
+.btn{
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    @include shadow;
+    background: rgb(255,121,218);
+    background: linear-gradient(176deg, rgba(255,121,218,1) 0%, rgba(181,97,219,1) 70%);
+}
