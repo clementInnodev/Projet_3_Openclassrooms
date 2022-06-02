@@ -1,0 +1,12 @@
+.fa-heart{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: black;
+        &:hover{
+        background: rgb(255,121,218);
+        background: linear-gradient(176deg, rgba(255,121,218,1) 0%, rgba(181,97,219,1) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke-width: 0;
+        transform: scale(1.05);
+    }
+  }

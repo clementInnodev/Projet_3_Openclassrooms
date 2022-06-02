@@ -162,6 +162,10 @@ body {
   margin: 0;
 }
 
+.restaurant-card-icone {
+  background-color: red;
+}
+
 .menu-card {
   background-color: white;
   display: -webkit-box;
@@ -189,6 +193,21 @@ body {
   margin: 0 0 10px 0;
   font-size: 0.9rem;
   font-weight: lighter;
+}
+
+.fa-heart {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.7px;
+  -webkit-text-stroke-color: black;
+}
+
+.fa-heart:hover {
+  background: #ff79da;
+  background: linear-gradient(176deg, #ff79da 0%, #b561db 70%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 0;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .header {
