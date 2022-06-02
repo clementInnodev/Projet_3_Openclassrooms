@@ -26,6 +26,12 @@ body {
   background: linear-gradient(176deg, #ff79da 0%, #b561db 70%);
 }
 
+.btn:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .guide-card {
   display: -webkit-box;
   display: -ms-flexbox;
