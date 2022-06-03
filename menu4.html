@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ohmyfood</title>
     <script src="https://kit.fontawesome.com/b9ebb4d88e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="./css/normalize.css" rel="stylesheet">
     <link href="/css/index.css" rel="stylesheet">
   </head>
@@ -19,11 +20,14 @@
 
         <img src="/src/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo d'un plat au restaurant 'Le délice des sens'" class="menu-img">
 
-        <div class="menu-content">
+        <main class="menu-content">
 
             <header class="menu-header">
                 <h1 class="menu-title">Le délice des sens</h1>
-                <i class="fa-solid fa-heart menu-icone"></i>
+                <div class="restaurant-card-container-icon">
+                  <span class="material-icons restaurant-card-icon-border">favorite_border</span>
+                  <span class="material-icons restaurant-card-icon">favorite</span>
+                </div>
             </header>
 
             <div class="menu-div">
@@ -55,6 +59,7 @@
                     <div class="menu-card-price">20€</div>
                     <div class="menu-card-valid"><i class="fa-solid fa-circle-check menu-card-valid-icone"></i></div>
                 </div>
+            </div>
 
             <div class="menu-div">
                 <h2 class="menu-div-title">PLATS</h2>
@@ -121,8 +126,7 @@
                 <button class="btn">Explorer nos restaurants</button>
             </div>
             
-            
-        </div>
+        </main>
 
     </section>
 
