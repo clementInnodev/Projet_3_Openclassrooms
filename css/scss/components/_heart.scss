@@ -1,12 +1,31 @@
-.fa-heart{
+.restaurant-card-container-icon{
+    height: 25px;
+    width: 25px;
+    position: relative;
+}
+
+.restaurant-card-icon{
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0%;
+    background: rgb(255,121,218);
+    background: linear-gradient(176deg, rgba(255,121,218,1) 0%, rgba(181,97,219,1) 70%);
+    background-clip: text;
+    transform: scale(1.02);
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: black;
-        &:hover{
-        background: rgb(255,121,218);
-        background: linear-gradient(176deg, rgba(255,121,218,1) 0%, rgba(181,97,219,1) 70%);
-        -webkit-background-clip: text;
-        -webkit-text-stroke-width: 0;
-        transform: scale(1.05);
+    transition: opacity 0.3s ease-in-out;
+    &:hover{
+        opacity: 100%;
+        & > .restaurant-card-icon-border{
+            opacity: 0%;
+        }
     }
-  }
+    &-border{
+        left: 0;
+        top: 0;
+        position: absolute;
+        transition: color 0.2s ease-in-out;
+    }
+}

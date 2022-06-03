@@ -27,7 +27,8 @@ body {
 }
 
 .btn:hover {
-  opacity: 0.9;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -195,19 +196,42 @@ body {
   font-weight: lighter;
 }
 
-.fa-heart {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0.7px;
-  -webkit-text-stroke-color: black;
+.restaurant-card-container-icon {
+  height: 25px;
+  width: 25px;
+  position: relative;
 }
 
-.fa-heart:hover {
+.restaurant-card-icon {
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0%;
   background: #ff79da;
   background: linear-gradient(176deg, #ff79da 0%, #b561db 70%);
+  background-clip: text;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
   -webkit-background-clip: text;
-  -webkit-text-stroke-width: 0;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.restaurant-card-icon:hover {
+  opacity: 100%;
+}
+
+.restaurant-card-icon:hover > .restaurant-card-icon-border {
+  opacity: 0%;
+}
+
+.restaurant-card-icon-border {
+  left: 0;
+  top: 0;
+  position: absolute;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
 
 .header {
