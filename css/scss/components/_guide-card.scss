@@ -5,6 +5,7 @@
     background-color: $color-background;
     margin: 0 0 20px 0;
     height: 70px;
+    width: 350px;
     border-radius: 12px;
     position: relative;
     @include shadow;
@@ -35,4 +36,26 @@
         position: absolute;
         left: 12%;
     }
+}
+
+@media screen and (min-width: 1130px) and (max-width: 2000px) {
+    
+    .guide-card{
+        margin: 0 20px 0 0;
+        &:nth-child(3){
+            margin-right: 0;
+        }
+    }
+
+}
+
+@media screen and (min-width: 2001px) {
+    
+    .guide-card{
+        margin: 0 40px 0 0;
+        &:nth-child(3){
+            margin-right: 0;
+        }
+    }
+
 }
