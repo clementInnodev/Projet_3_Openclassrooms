@@ -8,6 +8,6 @@
     background: linear-gradient(176deg, rgba(255,121,218,1) 0%, rgba(181,97,219,1) 70%);
     &:hover{
         filter: brightness(1.1);
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @include shadow-hover;
     }
 }

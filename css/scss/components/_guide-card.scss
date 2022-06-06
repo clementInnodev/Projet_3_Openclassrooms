@@ -12,6 +12,7 @@
     cursor: pointer;
     &:hover{
         background-color: lighten($color: $color-primary, $amount: 35%);
+        @include shadow-hover;
         .guide-card-icone{
             color: $color-primary;
         }

@@ -61,6 +61,8 @@ body {
 
 .guide-card:hover {
   background-color: #f2eafb;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .guide-card:hover .guide-card-icone {
@@ -124,10 +126,17 @@ body {
   border-radius: 12px;
   position: relative;
   color: black;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .restaurant-card:visited {
   color: inherit;
+}
+
+.restaurant-card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .restaurant-card-alert {
@@ -232,6 +241,7 @@ body {
 }
 
 .menu-card {
+  cursor: pointer;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,13 +249,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px 0 20px 0;
-  padding: 0 15px 0 15px;
+  padding: 0 0 0 15px;
   border-radius: 12px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .menu-card-content {
-  width: 80%;
+  width: 70%;
 }
 
 .menu-card-title {
@@ -258,6 +275,47 @@ body {
   margin: 0 0 10px 0;
   font-size: 0.9rem;
   font-weight: lighter;
+}
+
+.menu-card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu-card:hover .menu-card-valid {
+  width: 60px;
+}
+
+.menu-card:hover .menu-card-valid-icone {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  opacity: 1;
+}
+
+.menu-card-valid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0 12px 12px 0;
+  background-color: #99E2D0;
+  width: 0px;
+  height: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-card-valid-icone {
+  color: white;
+  font-size: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  transition: all 0.4s ease-in-out 0.1s;
 }
 
 @media screen and (min-width: 1390px) {

@@ -8,8 +8,12 @@
     border-radius: 12px;
     position: relative;
     color: black;
+    @include shadow;
     &:visited{
         color: inherit;
+    }
+    &:hover{
+        @include shadow-hover;
     }
     &-alert{
         position: absolute;
