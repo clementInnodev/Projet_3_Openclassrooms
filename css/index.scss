@@ -1,7 +1,11 @@
 @import "./scss/utils/variables";
 @import "./scss/utils/mixins";
+@import "./scss/utils/keyframes";
 @import "./scss/Base";
-@import "./scss/components/loader";
+@import "./scss/components/loader-box";
+@import "./scss/components/loaderdot";
+@import "./scss/components/loadertxt";
+@import "./scss/components/loadercircle";
 @import "./scss/components/btn";
 @import "./scss/components/guide-card";
 @import "./scss/components/card-restaurant";

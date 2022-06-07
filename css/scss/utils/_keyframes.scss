@@ -1,0 +1,73 @@
+@keyframes progress-menu-card {
+    from{
+        opacity: 0%;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 100%;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flash {
+    0%{
+        color: $color-primary;
+        text-shadow: 0 0 7px $color-primary;
+        //transform: translateY(-15px);
+    }
+    30%{
+        color: white;
+        text-shadow: none;
+        //transform: translateY(0);
+    }
+    33%{
+        color: $color-secondary;
+        text-shadow: 0 0 7px $color-primary;
+        //transform: translateY(-15px);
+    }
+    63%{
+        color: white;
+        text-shadow: none;
+        //transform: translateY(0);
+    }
+    66%{
+        color: darken($color: $color-tertiary, $amount: 25);
+        text-shadow: 0 0 7px $color-primary;
+        //transform: translateY(-15px);
+    }
+    96%{
+        color: white;
+        text-shadow: none;
+        //transform: translateY(0);
+    }
+    100%{
+        color: $color-primary;
+        text-shadow: 0 0 7px $color-primary;
+        //transform: translateY(-15px);
+    }
+}
+
+@keyframes visible {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes bump{
+    100%{
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0def);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

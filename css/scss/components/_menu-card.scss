@@ -47,10 +47,36 @@
             color: white;
             font-size: 20px;
             opacity: 0;
-            transition: all 0.4s ease-in-out 0.1s;
+            transition: all 0.5s ease-in-out 0.1s;
         }
     }
-
+    &-1{
+        animation: progress-menu-card 0.8s both ease-in-out;
+    }
+    &-2{
+        animation: progress-menu-card 0.8s 0.1s both ease-in-out;
+    }
+    &-3{
+        animation: progress-menu-card 0.8s 0.2s both ease-in-out;
+    }
+    &-4{
+        animation: progress-menu-card 0.8s 0.3s both ease-in-out;
+    }
+    &-5{
+        animation: progress-menu-card 0.8s 0.4s both ease-in-out;
+    }
+    &-6{
+        animation: progress-menu-card 0.8s 0.5s both ease-in-out;
+    }
+    &-7{
+        animation: progress-menu-card 0.8s 0.6s both ease-in-out;
+    }
+    &-8{
+        animation: progress-menu-card 0.8s 0.7s both ease-in-out;
+    }
+    &-9{
+        animation: progress-menu-card 0.8s 0.8s both ease-in-out;
+    }
 }
 
 @media screen and (min-width: 1390px){

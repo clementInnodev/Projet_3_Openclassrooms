@@ -1,0 +1,30 @@
+.loaderdot{
+    @include flex-justify-align;
+    &-dot{
+        @include width-height(50px, 50px);
+        border-radius: 50%;
+        background-color: black;
+        margin: 0 40px;
+        animation: bump infinite 0.4s alternate;
+        &:nth-child(1){
+            background-color: white;
+            animation-delay: 0.1s;
+        }
+        &:nth-child(2){
+            background-color: $color-primary;
+            animation-delay: 0.2s;
+        }
+        &:nth-child(3){
+            background-color: $color-secondary;
+            animation-delay: 0.3s;
+        }
+        &:nth-child(4){
+            background-color: $color-tertiary;
+            animation-delay: 0.4s;
+        }
+        &:nth-child(5){
+            background-color: white;
+            animation-delay: 0.5s;
+        }
+    }
+}

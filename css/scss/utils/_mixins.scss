@@ -5,3 +5,21 @@
 @mixin shadow-hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+@mixin loadercircle-before-after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+
+@mixin width-height ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-justify-align ($justify-content:center, $align-items:center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
