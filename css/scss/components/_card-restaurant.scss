@@ -1,14 +1,13 @@
 .restaurant-card{
+    @include shadow;
+    @include width-height(350px, 250px);
     display: block;
     text-decoration: none;
     background-color: white;
     margin: 0 0 20px 0;
-    height: 250px;
-    width: 350px;
     border-radius: 12px;
     position: relative;
     color: black;
-    @include shadow;
     &:visited{
         color: inherit;
     }
@@ -16,9 +15,7 @@
         @include shadow-hover;
     }
     &-alert{
-        position: absolute;
-        top: 10px;
-        right: 10px;
+        @include top-right-bottom-left(10px, 10px, auto, auto);
         background-color: $color-alert;
         padding: 5px 10px 5px 10px;
         font-size: 0.8rem;
@@ -27,24 +24,19 @@
         border-radius: 5px;
     }
     &-img{
+        @include width-height(100%, 70%);
         object-fit: cover;
-        height: 70%;
-        width: 100%;
         border-radius: 12px 12px 0 0;
     }
     &-content{
+        @include flex-direction-justify-align(row, space-between, center);
         height: 30%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 0 15px 0 15px;
         margin-top: -5px;
     }
     &-txt{
+        @include flex-direction-justify-align(column, center, start);
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         &-title{
             font-size: 1rem;
             margin: 0 0 5px 0;

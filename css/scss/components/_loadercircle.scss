@@ -1,12 +1,12 @@
 .loadercircle{
     @include width-height(200px, 200px);
-    @include flex-justify-align;
+    @include flex-direction-justify-align;
 }
 
 .circle{
+    @include width-height(150px, 150px);
     display: block;
     position: relative;
-    @include width-height(150px, 150px);
     border-radius: 50%;
     border: 5px solid transparent;
     border-top-color: $color-primary;
@@ -14,20 +14,14 @@
     background-color: transparent;
     &::before{
         @include loadercircle-before-after;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
+        @include top-right-bottom-left(10px, 10px, 10px, 10px);
         border-top-color: $color-secondary;
         animation: spin 3s linear infinite;
         background-color: transparent;
     }
     &::after{
         @include loadercircle-before-after;
-        top: 25px;
-        left: 25px;
-        right: 25px;
-        bottom: 25px;
+        @include top-right-bottom-left(25px, 25px, 25px, 25px);
         border-top-color: $color-tertiary;
         animation: spin 1.5s linear infinite;
         background-color: transparent;

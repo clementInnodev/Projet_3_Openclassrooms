@@ -1,13 +1,9 @@
 .loader-box{
+    @include flex-direction-justify-align(column);
+    @include width-height(100%, 100vh);
     position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: 20;
+    z-index: 1;
     background-color: darken($color: $color-background, $amount: 75%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     animation: visible 1s 3s linear forwards;
 }

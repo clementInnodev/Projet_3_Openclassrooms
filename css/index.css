@@ -167,11 +167,6 @@ body {
     }
 }*/
 .loader-box {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: 20;
-  background-color: #333333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +180,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-color: #333333;
   overflow: hidden;
   -webkit-animation: visible 1s 3s linear forwards;
           animation: visible 1s 3s linear forwards;
@@ -194,6 +194,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -246,6 +250,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -314,6 +322,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -323,10 +335,10 @@ body {
 }
 
 .circle {
-  display: block;
-  position: relative;
   width: 150px;
   height: 150px;
+  display: block;
+  position: relative;
   border-radius: 50%;
   border: 5px solid transparent;
   border-top-color: #9356DC;
@@ -340,10 +352,11 @@ body {
   position: absolute;
   border-radius: 50%;
   border: 5px solid transparent;
+  position: absolute;
   top: 10px;
-  left: 10px;
   right: 10px;
   bottom: 10px;
+  left: 10px;
   border-top-color: #FF79DA;
   -webkit-animation: spin 3s linear infinite;
           animation: spin 3s linear infinite;
@@ -355,10 +368,11 @@ body {
   position: absolute;
   border-radius: 50%;
   border: 5px solid transparent;
+  position: absolute;
   top: 25px;
-  left: 25px;
   right: 25px;
   bottom: 25px;
+  left: 25px;
   border-top-color: #99E2D0;
   -webkit-animation: spin 1.5s linear infinite;
           animation: spin 1.5s linear infinite;
@@ -366,41 +380,45 @@ body {
 }
 
 .btn {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 10px 20px 10px 20px;
   border-radius: 30px;
   border: none;
   color: white;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: #ff79da;
   background: linear-gradient(176deg, #ff79da 0%, #b561db 70%);
 }
 
 .btn:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 .guide-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f2f2f2;
-  margin: 0 0 20px 0;
-  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 350px;
-  border-radius: 12px;
-  position: relative;
+  height: 70px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #f2f2f2;
+  margin: 0 0 20px 0;
+  border-radius: 12px;
+  position: relative;
   cursor: pointer;
 }
 
@@ -419,21 +437,25 @@ body {
 }
 
 .guide-card-number {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
+  position: absolute;
   left: -11px;
   color: white;
   background-color: #9356DC;
-  height: 25px;
-  width: 25px;
   border-radius: 20px;
 }
 
@@ -462,17 +484,17 @@ body {
 }
 
 .restaurant-card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 350px;
+  height: 250px;
   display: block;
   text-decoration: none;
   background-color: white;
   margin: 0 0 20px 0;
-  height: 250px;
-  width: 350px;
   border-radius: 12px;
   position: relative;
   color: black;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .restaurant-card:visited {
@@ -488,6 +510,8 @@ body {
   position: absolute;
   top: 10px;
   right: 10px;
+  bottom: auto;
+  left: auto;
   background-color: #D1E7DD;
   padding: 5px 10px 5px 10px;
   font-size: 0.8rem;
@@ -497,30 +521,33 @@ body {
 }
 
 .restaurant-card-img {
+  width: 100%;
+  height: 70%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 70%;
-  width: 100%;
   border-radius: 12px 12px 0 0;
 }
 
 .restaurant-card-content {
-  height: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 30%;
   padding: 0 15px 0 15px;
   margin-top: -5px;
 }
 
 .restaurant-card-txt {
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,6 +558,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 100%;
 }
 
 .restaurant-card-txt-title {
@@ -586,24 +617,28 @@ body {
 }
 
 .menu-card {
-  cursor: pointer;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  background-color: white;
   margin: 20px 0 20px 0;
   padding: 0 0 0 15px;
   border-radius: 12px;
   height: 60px;
   overflow: hidden;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .menu-card-content {
@@ -641,16 +676,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 0;
+  height: 100%;
   border-radius: 0 12px 12px 0;
   background-color: #99E2D0;
-  width: 0px;
-  height: 100%;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -663,49 +702,24 @@ body {
   transition: all 0.5s ease-in-out 0.1s;
 }
 
-.menu-card-1 {
+.menu-card:nth-child(2) {
   -webkit-animation: progress-menu-card 0.8s both ease-in-out;
           animation: progress-menu-card 0.8s both ease-in-out;
 }
 
-.menu-card-2 {
-  -webkit-animation: progress-menu-card 0.8s 0.1s both ease-in-out;
-          animation: progress-menu-card 0.8s 0.1s both ease-in-out;
-}
-
-.menu-card-3 {
+.menu-card:nth-child(3) {
   -webkit-animation: progress-menu-card 0.8s 0.2s both ease-in-out;
           animation: progress-menu-card 0.8s 0.2s both ease-in-out;
 }
 
-.menu-card-4 {
-  -webkit-animation: progress-menu-card 0.8s 0.3s both ease-in-out;
-          animation: progress-menu-card 0.8s 0.3s both ease-in-out;
-}
-
-.menu-card-5 {
+.menu-card:nth-child(4) {
   -webkit-animation: progress-menu-card 0.8s 0.4s both ease-in-out;
           animation: progress-menu-card 0.8s 0.4s both ease-in-out;
 }
 
-.menu-card-6 {
-  -webkit-animation: progress-menu-card 0.8s 0.5s both ease-in-out;
-          animation: progress-menu-card 0.8s 0.5s both ease-in-out;
-}
-
-.menu-card-7 {
+.menu-card:nth-child(5) {
   -webkit-animation: progress-menu-card 0.8s 0.6s both ease-in-out;
           animation: progress-menu-card 0.8s 0.6s both ease-in-out;
-}
-
-.menu-card-8 {
-  -webkit-animation: progress-menu-card 0.8s 0.7s both ease-in-out;
-          animation: progress-menu-card 0.8s 0.7s both ease-in-out;
-}
-
-.menu-card-9 {
-  -webkit-animation: progress-menu-card 0.8s 0.8s both ease-in-out;
-          animation: progress-menu-card 0.8s 0.8s both ease-in-out;
 }
 
 @media screen and (min-width: 1390px) {
@@ -715,8 +729,8 @@ body {
 }
 
 .restaurant-card-container-icon {
-  height: 25px;
   width: 25px;
+  height: 25px;
   position: relative;
 }
 
@@ -745,19 +759,21 @@ body {
 }
 
 .restaurant-card-icon-border {
-  left: 0;
-  top: 0;
   position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
   -webkit-transition: color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out;
 }
 
 .header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: white;
   text-align: center;
   position: relative;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header-logo {
@@ -765,11 +781,13 @@ body {
 }
 
 .header-link {
+  position: absolute;
+  top: 18px;
+  right: auto;
+  bottom: auto;
+  left: 10%;
   color: black;
   height: 100%;
-  position: absolute;
-  left: 10%;
-  top: 15px;
 }
 
 .header-link:visited {
@@ -856,8 +874,8 @@ body {
 }
 
 .menu-img {
-  height: 270px;
   width: 100%;
+  height: 270px;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: 1;
@@ -876,6 +894,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -900,10 +922,10 @@ body {
 }
 
 .menu-div-title::after {
-  content: "";
-  display: block;
   width: 45px;
   height: 3px;
+  content: "";
+  display: block;
   background-color: #99E2D0;
   margin-top: 5px;
 }
@@ -922,6 +944,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -943,6 +968,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

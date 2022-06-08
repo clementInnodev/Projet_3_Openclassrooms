@@ -1,17 +1,15 @@
 .header{
+    @include shadow;
     background-color: white;
     text-align: center;
     position: relative;
-    @include shadow;
     &-logo{
         margin: 10px 0 10px 0;
     }
     &-link{
+        @include top-right-bottom-left(18px, auto, auto, 10%);
         color: black;
         height: 100%;
-        position: absolute;
-        left: 10%;
-        top: 15px;
         &:visited{
             color: inherit;
         }

@@ -1,14 +1,11 @@
 .guide-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-direction-justify-align;
+    @include width-height(350px, 70px);
+    @include shadow;
     background-color: $color-background;
     margin: 0 0 20px 0;
-    height: 70px;
-    width: 350px;
     border-radius: 12px;
     position: relative;
-    @include shadow;
     cursor: pointer;
     &:hover{
         background-color: lighten($color: $color-primary, $amount: 35%);
@@ -21,15 +18,12 @@
         font-size: 1rem;
     }
     &-number{
+        @include flex-direction-justify-align;
+        @include width-height(25px, 25px);
         position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         left: -11px;
         color: white;
         background-color: $color-primary;
-        height: 25px;
-        width: 25px;
         border-radius: 20px;
     }
     &-icone{
