@@ -389,6 +389,8 @@ body {
   color: white;
   background: #ff79da;
   background: linear-gradient(176deg, #ff79da 0%, #b561db 70%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -421,6 +423,8 @@ body {
   border-radius: 12px;
   position: relative;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .guide-card:hover {
@@ -496,6 +500,8 @@ body {
   border-radius: 12px;
   position: relative;
   color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .restaurant-card:visited {

@@ -7,6 +7,7 @@
     color: white;
     background: rgb(255,121,218);
     background: linear-gradient(176deg, rgba(255,121,218,1) 0%, rgba(181,97,219,1) 70%);
+    transition: all 0.3s ease-in-out;
     &:hover{
         @include shadow-hover;
         filter: brightness(1.1);
