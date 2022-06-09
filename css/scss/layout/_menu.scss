@@ -42,7 +42,7 @@
 @media screen and (min-width: 440px) {
     .menu{
         &-content{
-            @include flex-direction-justify-align(column, baseline, center);
+            @include flex-direction-justify-align(column, flex-start, center);
         }
         &-header{
             width: 410px;
@@ -55,7 +55,7 @@
 
 @media screen and (min-width: 900px) {
     .menu{
-        @include flex-direction-justify-align(column, baseline, center);
+        @include flex-direction-justify-align(column, flex-start, center);
         &-content{
             width: 800px;
             border-radius: 40px;
