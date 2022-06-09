@@ -80,11 +80,10 @@
         }
         &-div{
             margin-top: 60px;
-            &:nth-child(1){
-                margin-right: 40px;
-            }
-            &:nth-child(2){
-                margin-right: 40px;
+            @for $i from 1 through 2{
+                &:nth-child(#{$i}){
+                    margin-right: 40px;
+                }
             }
             &-title{
                 margin-bottom: 40px;
