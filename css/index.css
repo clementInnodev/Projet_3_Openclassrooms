@@ -180,14 +180,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: absolute;
   z-index: 1;
   background-color: #333333;
   overflow: hidden;
-  -webkit-animation: visible 1s 3s linear forwards;
-          animation: visible 1s 3s linear forwards;
+  -webkit-animation: visible 1s 30s linear forwards;
+          animation: visible 1s 30s linear forwards;
 }
 
 .loaderdot {
@@ -244,6 +244,22 @@ body {
   background-color: white;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 650px) {
+  .loaderdot-dot {
+    width: 40px;
+    height: 40px;
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .loaderdot-dot {
+    width: 35px;
+    height: 35px;
+    margin: 0 15px;
+  }
 }
 
 .loadertxt {
@@ -314,6 +330,20 @@ body {
 .loadertxt-lettre:nth-child(9) {
   -webkit-animation-delay: 0.9s;
           animation-delay: 0.9s;
+}
+
+@media screen and (max-width: 650px) {
+  .loadertxt-lettre {
+    font-size: 60px;
+    letter-spacing: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .loadertxt-lettre {
+    font-size: 45px;
+    letter-spacing: 7px;
+  }
 }
 
 .loadercircle {

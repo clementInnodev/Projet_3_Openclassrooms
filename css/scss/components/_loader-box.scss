@@ -1,11 +1,11 @@
 .loader-box{
     @include flex-direction-justify-align(column);
-    @include width-height(100%, 100vh);
+    @include width-height(100vw, 100vh);
     position: absolute;
     z-index: 1;
     background-color: darken($color: $color-background, $amount: 75%);
     overflow: hidden;
-    animation: visible 1s 3s linear forwards;
+    animation: visible 1s 30s linear forwards;
 }
 
 

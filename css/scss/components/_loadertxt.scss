@@ -35,3 +35,21 @@
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    .loadertxt{
+        &-lettre{
+            font-size: 60px;
+            letter-spacing: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .loadertxt{
+        &-lettre{
+            font-size: 45px;
+            letter-spacing: 7px;
+        }
+    }
+}
