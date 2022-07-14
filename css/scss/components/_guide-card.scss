@@ -1,4 +1,4 @@
-.guide-card{
+.guide__card{
     @include flex-direction-justify-align;
     @include width-height(350px, 70px);
     @include shadow;
@@ -11,14 +11,14 @@
     &:hover{
         background-color: lighten($color: $color-primary, $amount: 35%);
         @include shadow-hover;
-        .guide-card-icone{
+        .guide__card__icone{
             color: $color-primary;
         }
     }
-    &-title{
+    &__title{
         font-size: 1rem;
     }
-    &-number{
+    &__number{
         @include flex-direction-justify-align;
         @include width-height(25px, 25px);
         position: absolute;
@@ -27,7 +27,7 @@
         background-color: $color-primary;
         border-radius: 20px;
     }
-    &-icone{
+    &__icone{
         color: darken($color: $color-background, $amount: 50%);
         position: absolute;
         left: 12%;
@@ -36,7 +36,7 @@
 
 @media screen and (min-width: 1130px) and (max-width: 2000px) {
     
-    .guide-card{
+    .guide__card{
         margin: 0 20px 0 0;
         &:nth-child(3){
             margin-right: 0;
@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 2001px) {
     
-    .guide-card{
+    .guide__card{
         margin: 0 40px 0 0;
         &:nth-child(3){
             margin-right: 0;

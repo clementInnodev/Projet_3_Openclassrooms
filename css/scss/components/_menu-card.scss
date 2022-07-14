@@ -1,4 +1,4 @@
-.menu-card{
+.menu__card{
     @include flex-direction-justify-align(row, space-between, center);
     @include shadow;
     cursor: pointer;
@@ -9,37 +9,39 @@
     height: 60px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-    &-content{
+    &__content{
         width: 70%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
-    &-title{
+    &__title{
         margin: 10px 0 5px 0;
         font-size: 1rem;
         font-weight: bold;
     }
-    &-desc{
+    &__desc{
         margin: 0 0 10px 0;
         font-size: 0.9rem;
         font-weight: lighter;
     }
     &:hover{
         @include shadow-hover;
-        & .menu-card-valid {
+        & .menu__card__valid {
             width: 60px;
-            &-icone{
+            &__icone{
                 transform: rotate(360deg);
                 opacity: 1;
             }
         }
     }
-
-    &-valid{
+    &__valid{
         @include flex-direction-justify-align(row, center, center);
         @include width-height(0, 100%);
         border-radius: 0 12px 12px 0;
         background-color: $color-tertiary;
         transition: all 0.5s ease-in-out;
-        &-icone{
+        &__icone{
             color: white;
             font-size: 20px;
             opacity: 0;
@@ -54,7 +56,7 @@
 }
 
 @media screen and (min-width: 1390px){
-    .menu-card{
+    .menu__card{
         margin-bottom: 30px;
     }
 }

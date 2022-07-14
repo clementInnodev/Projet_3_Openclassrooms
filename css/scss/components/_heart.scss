@@ -1,9 +1,9 @@
-.restaurant-card-container-icon{
+.restaurant__card__container__icon{
     @include width-height(25px, 25px);
     position: relative;
 }
 
-.restaurant-card-icon{
+.restaurant__card__icon{
     left: 0;
     top: 0;
     position: absolute;
@@ -17,11 +17,11 @@
     transition: opacity 0.3s ease-in-out;
     &:hover{
         opacity: 100%;
-        & > .restaurant-card-icon-border{
+        & > .restaurant__card__icon--border{
             opacity: 0%;
         }
     }
-    &-border{
+    &--border{
         @include top-right-bottom-left(0, auto, auto, 0);
         transition: color 0.2s ease-in-out;
     }

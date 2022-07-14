@@ -1,6 +1,6 @@
 .loaderdot{
     @include flex-direction-justify-align;
-    &-dot{
+    &__dot{
         @include width-height(50px, 50px);
         border-radius: 50%;
         background-color: black;
@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 650px) {
     .loaderdot{
-        &-dot{
+        &__dot{
             @include width-height(40px, 40px);
             margin: 0 25px;
         }
@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 450px) {
     .loaderdot{
-        &-dot{
+        &__dot{
             @include width-height(35px, 35px);
             margin: 0 15px;
         }

@@ -1,26 +1,26 @@
 .menu{
-    &-img{
+    &__img{
         @include width-height(100%, 270px);
         object-fit: cover;
         z-index: 1;
     }
-    &-content{
+    &__content{
         transform: translateY(-40px);
         background-color: $color-background;
         padding: 30px 15px 0 15px;
         border-radius: 40px 40px 0 0;
         z-index: 2;
     }
-    &-header{
+    &__header{
         @include flex-direction-justify-align(row, space-between, center);
+        &__title{
+            margin: 0;
+            font-size: 1.5rem;
+        }
     }
-    &-title{
-        margin: 0;
-        font-size: 1.5rem;
-    }
-    &-div{
+    &__group{
         margin-top: 30px;
-        &-title{
+        &__title{
             margin: 0;
             font-size: 1.1rem;
             font-weight: lighter;
@@ -33,7 +33,7 @@
             }
         }
     }
-    &-btn{
+    &__btn{
         text-align: center;
         margin-top: 50px;
     }
@@ -41,13 +41,13 @@
 
 @media screen and (min-width: 440px) {
     .menu{
-        &-content{
+        &__content{
             @include flex-direction-justify-align(column, flex-start, center);
         }
-        &-header{
+        &__header{
             width: 410px;
         }
-        &-div{
+        &__group{
             width: 410px;
         }
     }
@@ -56,7 +56,7 @@
 @media screen and (min-width: 900px) {
     .menu{
         @include flex-direction-justify-align(column, flex-start, center);
-        &-content{
+        &__content{
             width: 800px;
             border-radius: 40px;
             padding: 30px 15px 30px 15px;
@@ -67,29 +67,29 @@
 
 @media screen and (min-width: 1390px) {
     .menu{
-        &-img{
+        &__img{
             height: 350px;
         }
-        &-flex{
+        &--flex{
             width: 100%;
             display: flex;
         }
-        &-content{
+        &__content{
             width: 1310px;
             padding: 60px 40px 60px 40px;
         }
-        &-div{
+        &__group{
             margin-top: 60px;
             @for $i from 1 through 2{
                 &:nth-child(#{$i}){
                     margin-right: 40px;
                 }
             }
-            &-title{
+            &__title{
                 margin-bottom: 40px;
             }
         }
-        &-btn{
+        &__btn{
             margin-top: 40px;
         }
     }

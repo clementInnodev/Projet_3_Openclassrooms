@@ -1,4 +1,4 @@
-.loader-box{
+.loader__box{
     @include flex-direction-justify-align(column);
     @include width-height(100%, 100%);
     position: absolute;
